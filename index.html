@@ -30,9 +30,13 @@
 					scrt2URL: 'https://orgfarm-5838e02233-dev-ed.develop.my.salesforce-scrt.com'
 				}
 			);
+window.addEventListener("onEmbeddedMessagingWindowMinimized", (event) => {
+  console.log("Received the onEmbeddedMessagingWindowMinimized event…");
+  console.log("Event detail: ", event.detail);
+});			
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
-		}
+		}		
 	};
 </script>
 <script type='text/javascript' src='https://orgfarm-5838e02233-dev-ed.develop.my.site.com/ESWASAgithubio1741762667157/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
