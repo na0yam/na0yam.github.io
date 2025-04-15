@@ -33,7 +33,7 @@
 window.addEventListener("onEmbeddedMessagingWindowMinimized", (event) => {
   console.log("Received the onEmbeddedMessagingWindowMinimized event…");
   console.log("Event detail: ", event.detail);
-
+embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
 	embeddedservice_bootstrap.utilAPI.hideChatButton();
 });			
 		} catch (err) {
