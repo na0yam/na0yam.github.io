@@ -7,7 +7,7 @@
   <body>
     <p>Hello World with Chat</p>
 <button id="launchChatButton" onclick="launchChat()">
-		Chat with our Agents!!!
+		Chat with our Agents!!! updated.
 	</button>
 	<script>
 	function launchChat() {
@@ -33,6 +33,8 @@
 window.addEventListener("onEmbeddedMessagingWindowMinimized", (event) => {
   console.log("Received the onEmbeddedMessagingWindowMinimized event…");
   console.log("Event detail: ", event.detail);
+
+	embeddedservice_bootstrap.utilAPI.hideChatButton();
 });			
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
