@@ -38,7 +38,10 @@ embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
   const button = document.querySelector(".minimizedButtonWrapper");
   if (button) {
     button.style.display = "none";
-  }	
+  console.log("button found");
+  }
+  console.log("end clickevent");
+	
 });			
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
