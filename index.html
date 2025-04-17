@@ -35,6 +35,10 @@ window.addEventListener("onEmbeddedMessagingWindowMinimized", (event) => {
   console.log("Event detail: ", event.detail);
 embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
 	embeddedservice_bootstrap.utilAPI.hideChatButton();
+  const button = document.querySelector(".minimizedButtonWrapper");
+  if (button) {
+    button.style.display = "none";
+  }	
 });			
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
