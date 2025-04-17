@@ -52,6 +52,12 @@ embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
 			console.error('Error loading Embedded Messaging: ', err);
 		}		
 	};
+	setInterval(() => {
+  const btn = document.querySelector(".minimizedButton");
+  if (btn && btn.style.display !== "none") {
+    btn.style.display = "none";
+  }
+}, 500);
 </script>
 <script type='text/javascript' src='https://orgfarm-5838e02233-dev-ed.develop.my.site.com/ESWASAgithubio1741762667157/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
     
