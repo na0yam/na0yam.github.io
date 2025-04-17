@@ -54,8 +54,10 @@ embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
 	};
 	setInterval(() => {
   const btn = document.querySelector(".minimizedButton");
+		console.log("minimized");
   if (btn && btn.style.display !== "none") {
     btn.style.display = "none";
+		console.log("found");
   }
 }, 500);
 </script>
